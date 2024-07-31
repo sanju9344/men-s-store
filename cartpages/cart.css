@@ -1,0 +1,95 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width:100%;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+nav #heading img{
+    margin-right: 10px;
+}
+nav #heading p{
+    font-size:30px ;
+}
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+}
+nav ul li{
+    margin-left: 30px;
+    list-style: none;
+    cursor: pointer;
+    font-weight:bold;
+    transition: 300ms;
+}
+nav ul li:hover{
+    color: blue;
+    transform: scale(1.5);
+}
+nav ul li:active{
+    color:brown;
+}
+.menu .menuLine{
+    width:20px;
+    height:3px;
+    background-color: black;
+    margin-bottom: 3px;
+    transition: 300ms;
+}
+.menu{
+    cursor: pointer;
+    display: none;
+}
+.menu:hover{
+    transform:scale(1.02);
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+#cart{
+    color:blue;
+    text-decoration: underline;
+}
+@media all and (max-width:730px){
+    nav ul{
+        text-align: center;
+        /* display: none; */
+        /* margin-right: px; */
+        flex-direction: column;
+        /* border:1px solid black; */
+        width:150px;     
+        margin-top:50px;   
+        display: none;
+    }
+    nav ul li{
+        margin-bottom: 15px;
+        font-size: small;
+        margin-left: 0;
+    }
+    .menu{
+        display: block;
+        margin-right: 25px;
+        margin-top: 15px;
+    }
+    
+    nav #heading img{
+        width:25px;
+        margin:0;
+    }
+    nav #heading #mens-store{
+        font-size: 20px;
+    }
+    .showmenu{
+        display:block;
+    }
+}
