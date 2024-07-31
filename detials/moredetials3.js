@@ -17,23 +17,23 @@ const color2 = document.getElementById('r2-color');
 const color = document.getElementById('color');
 
 tshirt1.addEventListener('click',()=>{
-    showImg.src = '/t shirts/white printed.jpg';
+    showImg.src = '../tshirts/white printed.jpg';
     color1.checked = true;
      color.innerHTML= 'White'
 });
 tshirt2.addEventListener('click',()=>{
-    showImg.src = '/t shirts/ts5.jpeg';
+    showImg.src = '../tshirts/ts5.jpeg';
     color2.checked = true;
     color.innerHTML = 'Sandal'; 
 });
 //  color radio btn clicks
 color1.onclick =()=>{
     color.innerHTML= 'White'
-    showImg.src = '/t shirts/white printed.jpg';
+    showImg.src = '../tshirts/white printed.jpg';
 } 
 color2.onclick =()=>{
     color.innerHTML = 'Sandal';
-showImg.src = '/t shirts/ts5.jpeg';
+showImg.src = '../tshirts/ts5.jpeg';
 }
 // size change
 const size = document.querySelector('#sizes h4');
