@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Men's store</title>
+    <link rel="stylesheet" href="moredetials.css">
+    <link rel="icon" href="../images/IMG_20240621_103049-removebg-preview.png">
+</head>
+<body>
+    <nav>
+        <div id="heading">
+            <img style="display: inline;" width="30px" src="../images/IMG_20240621_103049-removebg-preview.png" alt="">
+            <p id="mens-store" style="display: inline;">Men's store</p>
+        </div>
+        <ul>
+            <a href="../index.html"><li id="home">HOME</li></a>
+            <li>
+                <select name="" id="">
+                    <option value="">LOOKING FOR</option>
+                    <option value="">T-SHIRT</option>
+                    <option value="">SHIRT</option>
+                    <option value="">SUN-GLASSES</option>
+                    <option value="">SHOES</option>
+                </select>
+            </li>
+            <a href="../cartpages/cart.html"><li>CART</li></a>
+            <li>MY ACCOUNT</li>
+        </ul>
+        <div class="menu">
+            <div class="menuLine"></div>
+            <div class="menuLine"></div>
+            <div class="menuLine"></div>
+        </div>
+    </nav>
+    <hr class="hra"><br><br>
+    <div id="moredetials-btn">
+        <div id="images">
+            <img id="show-img" src="../t shirts/ts1.jpeg" alt=""><br><br>
+            <div id="option-img">
+                <img id="tshirt1" src="../t shirts/white tshirt.jpg" alt="">
+                <img id="tshirt2" src="../t shirts/ts1.jpeg" alt="">
+            </div>
+        </div>
+        <div id="detials-ofproduct">
+            <h1>Men's classic T-shirt</h1><br>
+            <div id="rate">
+            <s style="display: inline;">$600</s>
+            <p  style="display: inline;">$479</p><br><br>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Product Detials</th>
+                    </tr>
+                </thead>
+                    <tbody>
+                        <tr>
+                            <td><h4>Meterial</h4></td>
+                            <td class="keys">Cotton</td>
+                        </tr>
+                        <tr>
+                            <td><h4>Pattern</h4></td>
+                            <td class="keys">solid</td>
+                        </tr>
+                        <tr>
+                            <td><h4>Fit type</h4></td>
+                            <td class="keys">Regular fit</td>
+                        </tr>
+                        <tr>
+                            <td><h4>Sleeve type</h4></td>
+                            <td class="keys">Full sleeve</td>
+                        </tr>
+                        <tr>
+                            <td><h4>Collor type</h4></td>
+                            <td class="keys">Round neck</td>
+                        </tr>
+                        <tr>
+                            <td><h4>Length</h4></td>
+                            <td class="keys">Staandard length</td>
+                        </tr>
+                    </tbody>
+            </table><br>
+            <h3>Country of orgin: USA</h3><br>
+            <!-- color choose -->
+             <div id="colors">
+                <p style="display: inline;">color:</p>
+                <h4 id="color" style="display: inline;">Grey</h4> <br><br>
+                <input class="radio-btn" id="r1-color" type="radio"name="color" style="display: inline;"><label for="r1-color">White</label>
+                <input checked class="radio-btn" id="r2-color" type="radio"name="color" style="display: inline;"><label for="r2-color">Grey</label>
+                </div>
+            <!-- size choose --> <br><br>
+             <div id="sizes">
+                <p style="display: inline;">Size:</p>
+            <h4 style="display: inline;">S</h4> <br><br>
+            <input checked class="radio-btn" id="Ssize" onclick="Ssize()" type="radio" name="sizes"><label for="Ssize">S</label>
+            <input class="radio-btn" id="Msize" onclick="Msize()" type="radio" name="sizes"><label for="Msize">M</label>
+            <input class="radio-btn" id="Lsize" onclick="Lsize()" type="radio" name="sizes"><label for="Lsize">L</label>
+            <input class="radio-btn" id="XLsize" onclick="XLsize()" type="radio" name="sizes"><label for="XLsize">XL</label>
+            <input class="radio-btn" id="XXLsize" onclick="XXLsize()" type="radio" name="sizes"><label for="XXLsize">XXL</label>
+             </div>
+            <br><br>
+            <hr><br>
+            <!-- add to cart -->
+             <div id="carts">
+                <a href="/cartpages/cart.html"><button id="cart-btn" type="button">Add to Cart</button></a>
+             </div>
+             <br><br>
+             <hr>
+        </div>
+    </div>
+    <script src="moredetials1.js"></script>
+</body>
+</html>

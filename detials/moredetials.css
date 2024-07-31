@@ -1,0 +1,225 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width:100%;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+nav #heading img{
+    margin-right: 10px;
+}
+nav #heading p{
+    font-size:30px ;
+}
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+}
+nav ul li{
+    margin-left: 30px;
+    list-style: none;
+    cursor: pointer;
+    font-weight:bold;
+    transition: 300ms;
+}
+nav ul li:hover{
+    color: blue;
+    transform: scale(1.5);
+}
+nav ul li:active{
+    color:brown;
+}
+.menu .menuLine{
+    width:20px;
+    height:3px;
+    background-color: black;
+    margin-bottom: 3px;
+    transition: 300ms;
+}
+.menu{
+    cursor: pointer;
+    display: none;
+}
+.menu:hover{
+    transform:scale(1.02);
+}
+#moredetials-btn{
+    width:100%;
+    display: flex;
+}
+#images{
+    margin-left: 10%;
+    width:50%;
+}
+#images #show-img{
+        width:50%;
+    border-radius: 5px;
+}
+#option-img {
+    gap: 10px;
+
+}
+#option-img img{
+    width:15%;
+    border-radius: 5px;
+    transition: 400ms;
+    cursor: pointer;
+}
+#option-img img:hover{
+    filter: grayscale(1);
+    transform:scale(1.03);
+}
+#detials-ofproduct{
+    width:50%;
+    margin-top: 50px;
+}
+.radio-btn{
+    margin-right: 10px;
+    width:15px;
+    height:15px;
+}
+#cart-input{
+    width:50px;
+    height:20px;
+    margin-right: 10px;
+}
+#cart-btn{
+    width:90px;
+    height:28px;
+    border-radius: 5px;
+    background-color: antiquewhite;
+    font-weight: bold;
+    border:none;
+    cursor: pointer;
+}
+#cart-btn:hover{
+    background-color: blue;
+    color: white;
+}
+#cart-btn:active{
+    background-color: brown;
+    color:white;
+}
+input{
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+th{
+    text-align: left;
+    border-bottom: 2px solid black;
+}
+th,td{
+    padding: 10px;
+}
+table{
+    width:300px;
+    margin:auto;
+}
+td{
+    margin-left: 0px;
+}
+.keys{
+    text-align:right;
+}
+@media all and (max-width:730px){
+        nav ul{
+            text-align: center;
+            /* display: none; */
+            /* margin-right: px; */
+            flex-direction: column;
+            /* border:1px solid black; */
+            width:150px;     
+            margin-top:50px;   
+            display: none;
+        }
+        nav ul li{
+            margin-bottom: 15px;
+            font-size: small;
+            margin-left: 0;
+        }
+        .menu{
+            display: block;
+            margin-right: 25px;
+            margin-top: 15px;
+        }
+        nav #heading img{
+            width:25px;
+            margin:0;
+        }
+        nav #heading #mens-store{
+            font-size: 20px;
+        }
+        .showmenu{
+            display:block;
+        }
+        #moredetials-btn{
+            width:100%;
+            display:block;
+            margin:0 auto;
+        }
+        
+    #images{
+        display:grid;
+        place-items: center;
+        width:100%;
+        margin-left: 0%;
+    }
+    #images #show-img{
+        width:50%;
+    border-radius: 5px;
+    }
+    #option-img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #option-img img{
+        width:25%;
+        border-radius: 5px;
+        transition: 400ms;
+        cursor: pointer;
+    }
+    #detials-ofproduct{
+        width:100%;
+        margin-top: 50px;
+    }
+    #detials-ofproduct h1{
+        font-size: 20px;
+        text-align: center;
+    }
+    #detials-ofproduct #rate{
+        text-align: center;
+    }
+    #detials-ofproduct table{
+        display: grid;
+        place-items: center;
+    }
+    #detials-ofproduct tbody tr{
+    font-size: 15px;
+    }
+    #detials-ofproduct h3{
+        text-align: center;
+        font-size: 15px;
+    }
+    #colors{
+        text-align: center;
+    }
+    #sizes{
+        text-align: center;
+    }
+    #carts{
+        text-align: center;
+    }
+}
